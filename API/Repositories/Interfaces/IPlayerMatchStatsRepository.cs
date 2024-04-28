@@ -51,7 +51,7 @@ public interface IPlayerMatchStatsRepository
         DateTime? dateMin = null,
         DateTime? dateMax = null
     );
-    Task<double> GlobalWinrateAsync(
+    Task<double> GlobalWinRateAsync(
         int playerId,
         int mode,
         DateTime? dateMin = null,

@@ -215,7 +215,7 @@ public class PlayerMatchStatsRepository(OtrContext context) : IPlayerMatchStatsR
             .CountAsync();
     }
 
-    public async Task<double> GlobalWinrateAsync(
+    public async Task<double> GlobalWinRateAsync(
         int playerId,
         int mode,
         DateTime? dateMin = null,

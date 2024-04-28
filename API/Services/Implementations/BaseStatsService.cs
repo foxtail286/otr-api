@@ -53,7 +53,7 @@ public class BaseStatsService(
         }
 
         var matchesPlayed = await _matchStatsRepository.CountMatchesPlayedAsync(playerId, mode);
-        var winRate = await _matchStatsRepository.GlobalWinrateAsync(playerId, mode);
+        var winRate = await _matchStatsRepository.GlobalWinRateAsync(playerId, mode);
         var highestGlobalRank = await _ratingStatsRepository.HighestGlobalRankAsync(playerId, mode);
         var tournamentsPlayed = await _tournamentsService.CountPlayedAsync(playerId, mode);
         var rankProgress = new RankProgressDTO

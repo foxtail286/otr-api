@@ -23,7 +23,7 @@ public class MockMatchStatsRepository : Mock<IPlayerMatchStatsRepository>
     public MockMatchStatsRepository SetupGlobalWinRate()
     {
         Setup(x =>
-                x.GlobalWinrateAsync(
+                x.GlobalWinRateAsync(
                     It.IsAny<int>(),
                     It.IsAny<int>(),
                     It.IsAny<DateTime?>(),

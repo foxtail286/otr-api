@@ -295,7 +295,7 @@ public class PlayerStatsService(
         }
 
         var matchesPlayed = await _matchStatsRepository.CountMatchesPlayedAsync(playerId, mode);
-        var winRate = await _matchStatsRepository.GlobalWinrateAsync(playerId, mode);
+        var winRate = await _matchStatsRepository.GlobalWinRateAsync(playerId, mode);
         var highestRank = await _ratingStatsRepository.HighestGlobalRankAsync(playerId, mode);
 
         dto.MatchesPlayed = matchesPlayed;

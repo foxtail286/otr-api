@@ -153,7 +153,7 @@ public class LeaderboardService(
         if (query.Filter.MinWinRate < 0 || query.Filter.MinWinRate > query.Filter.MaxWinRate)
         {
             throw new ArgumentException(
-                "MinWinrate must be greater than 0 and less than or equal to MaxWinrate",
+                "MinWinRate must be greater than 0 and less than or equal to MaxWinRate",
                 nameof(query.Filter.MinWinRate)
             );
         }
@@ -161,14 +161,14 @@ public class LeaderboardService(
         if (query.Filter.MaxWinRate < 0 || query.Filter.MaxWinRate < query.Filter.MinWinRate)
         {
             throw new ArgumentException(
-                "MaxWinrate must be greater than 0 and greater than or equal to MinWinrate",
+                "MaxWinRate must be greater than 0 and greater than or equal to MinWinRate",
                 nameof(query.Filter.MaxWinRate)
             );
         }
 
         if (query.Filter.MinWinRate > 1 || query.Filter.MaxWinRate > 1)
         {
-            throw new ArgumentException("Winrate must be between 0 and 1", nameof(query.Filter.MinWinRate));
+            throw new ArgumentException("Win rate must be between 0 and 1", nameof(query.Filter.MinWinRate));
         }
     }
 

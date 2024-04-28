@@ -21,8 +21,8 @@ public class LeaderboardFilterModelBinder : IModelBinder
             MaxRating = GetValue<int?>("MaxRating"),
             MinMatches = GetValue<int?>("MinMatches"),
             MaxMatches = GetValue<int?>("MaxMatches"),
-            MinWinRate = GetValue<double?>("MinWinrate"),
-            MaxWinRate = GetValue<double?>("MaxWinrate"),
+            MinWinRate = GetValue<double?>("MinWinRate"),
+            MaxWinRate = GetValue<double?>("MaxWinRate"),
             TierFilters = new LeaderboardTierFilterDTO
             {
                 FilterBronze = GetValue<bool>("Bronze"),
